@@ -1,76 +1,177 @@
+/* Estilos generales */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url('fondo.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-color: #f4f4f4; /* Fondo principal */
 }
 
-.container {
-    width: 100%;
-    max-width: 400px;
-    margin: 50px auto;
-    padding: 50px;
-    border: 1px solid #cccccc;
-    border-radius: 30px;
-    box-shadow: 0 0 10px rgba(40, 41, 43, 0.1);
-    background-color: #eebbee;
+/* Encabezado */
+header {
+    background-color: #d4afc7; /* Fondo del encabezado */
+    color: #0c0c0c;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.container h2 {
+.logo {
+    max-height: 100px;
+    margin-left: 15px;
+}
+
+.logo img {
+    width: 200px;
+    height: 150px;
+    margin-top: -25px;
+}
+
+.banner h1 {
+    font-size: 24px;
+    margin: 0;
     text-align: center;
 }
 
-form {
-    margin-top: 20px;
-}
-
-label {
-    display: block;
-    margin-bottom: 5px;
-}
-
-input[type="text"],
-input[type="email"],
-input[type="password"],
-select {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 10px;
-    font-size: 16px;
-    border-radius: 10px;
-}
-
-button {
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
     display: flex;
-    justify-content: center;
-    width: 50%;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.boton-registro, .boton-login {
+    padding: 10px 20px;
+    background-color: #971397; /* Color del botón */
+    color: #fff;
+    border: 3px solid #ede7f6;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.boton-registro:hover, .boton-login:hover {
+    background-color: #ac80c7; /* Cambio de color al pasar el ratón por encima */
+}
+
+/* Estilo para la búsqueda */
+.busqueda {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.busqueda input[type="text"] {
+    width: 200px;
     padding: 10px;
-    border-radius: 50px;
-    margin: auto;
-    background-color: #af31af;
+    border: 2px solid #000;
+    border-radius: 5px;
+    background-color: #ece2f0;
+    font-weight: bold;
+}
+
+.busqueda button {
+    padding: 10px 20px;
+    background-color: #4a148c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.busqueda button:hover {
+    background-color: #38006b;
+}
+
+/* Contenido principal */
+.container {
+    padding: 20px;
+}
+
+.separador {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.columna {
+    flex: 1;
+    text-align: center;
+}
+
+.contenido-columna {
+    background-color:  #fbfafc; /* Fondo blanco del contenedor */
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2); /* Sombra del contenedor */
+    border: 2px solid #000000;
+    border-radius: 5px; /* Bordes redondeados del contenedor */
+    padding: 10px;
+    text-align: center;
+}
+
+.columna p {
+    display: inline;
+    margin: 0;
+    color: rgba(51, 51, 51, 0.7);
+}
+
+.cuadro-blanco {
+    margin-top: 10px;
+    height: 55vh; /* Ajusta la altura según tus preferencias */
+    border: 2px solid #000000;
+    display: flex;
+    border-radius: 5px;
+    background-color: #fbfafc;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.contenido-cuadro {
+    padding: 150px;
+}
+
+.contenido-cuadro h3 {
+    margin: 0;
+}
+
+.contenido-cuadro p {
+    margin: 0;
+    text-align: left;
+}
+
+button{
+    background-color: #470a47;
     border: none;
     color: #f0eeee;
+    font-size: 16px;
     cursor: pointer;
-}
-    
-.input-link {
-    margin-top: 10px;
-    text-align: right;
+    transition: background-color 0.3s ease;
+}*/
+
+/* Pie de Página */
+footer {
+    color: #080808;
+    padding: 1px 0;
+    text-align: center; /* Centra el texto horizontalmente */
+    position: absolute; /* Establecemos posición absoluta en el footer */
+    bottom: 0; /* Lo posicionamos en la parte inferior */
+    width: 100%;
+    display: flex; /* Utilizamos flexbox para alinear horizontalmente */
+    justify-content: center; /* Centra el contenido del footer */
+    align-items: center; /* Alineación vertical al centro */
 }
 
-.container p {
-    text-align: center;
+.pie {
+    margin-left: 10px;
 }
-button:hover {
-    background-color: #9b6198;
-}
-
-.error {
-    color: red;
-    font-size: 14px;
-    margin-top: 5px;
-}
-
-
